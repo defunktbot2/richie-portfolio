@@ -1,0 +1,164 @@
+header {
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Montserrat Alternates', serif;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Montserrat Alternates', serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Montserrat Alternates', serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Montserrat', serif;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #9ec5fe;
+  text-align: center;
+  padding: 32px;
+}
+
+.section {
+  padding: 20px;
+  text-align: left;
+}
+
+/* Alternating light blue and white background colors for each section */
+.light-blue {
+  background-color: #9ec5fe;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+/* Header Properties */
+.py-3 {
+  font-family: 'Montserrat Alternates', serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Hero Section Divisions w/ Flex Box */
+.hero-container {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.hero-text {
+  max-width: 500px;
+  /* Limit text width */
+}
+
+.hero-container img {
+  max-width: 340.2px;
+  margin-left: auto;
+  /* Space between text and image */
+}
+
+/* Introduction Section */
+#intro {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  /* Use flexbox for horizontal layout */
+  align-items: flex-start;
+  /* Align items to the top */
+}
+
+.text-container {
+  margin-right: 20px;
+  /* Space between text and image */
+}
+
+.intro-image {
+  max-width: 300px;
+  /* Control the image size */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+/* Project Section & Cards */
+.project-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  /* Allow cards to grow */
+  margin: 10px;
+  /* Space between cards */
+  padding: 16px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+/* Learn More Buttons */
+.button-container {
+  display: flex;
+  /* Use flexbox */
+  flex-direction: column;
+  /* Stack buttons vertically */
+  align-items: flex-start;
+  /* Align buttons to the start (left) */
+  margin-top: 10px;
+  /* Space above the buttons */
+}
+
+.btn {
+  margin-bottom: 10px;
+  /* Space between buttons */
+}
+
+/* Removes underline from project cards */
+.no-underline {
+  color: black;
+  text-decoration: none;
+}
+
+/* Primary Button States */
+.btn-primary {
+  background-color: #FFA600;
+  /* Orange */
+  font-family: 'Montserrat', serif;
+  border: none;
+  border-radius: 6px;
+  color: black;
+  padding: 16px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #FFC04C;
+  /* Light Orange */
+  color: black;
+}
+
+.btn-primary:active {
+  background-color: #9E6700 !important;
+  /* Dark Orange */
+  color: black
+}
