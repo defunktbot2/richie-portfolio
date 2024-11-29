@@ -44,26 +44,28 @@
     <!-- End of Header Section -->
 
     <!-- Start of Contact Form-->
-    <div>
-        <div class="text-container light-blue">
+    <div id="container" class="light-blue">
+        <div class="text-container">
             <h2>Get In Touch</h2>
             <p>If you'd like to contact me, please fill out this form, and I will happily reply! I look forward to your
                 message
                 and getting to know you! I will answer any questions you may have and try my best to get back to you
                 promptly.
+            <br><br>
+            <span class="red">*</span>INDICATES REQUIRED FIELD
             </p>
         </div>
     </div>
     <div class="contact-container">
         <form action="action_page.php">
 
-            <label for="fname">First Name*</label>
+            <label for="fname">First Name<span class="red">*</span></label>
             <input type="text" id="fname" name="firstname" placeholder="John" required>
 
-            <label for="lname">Last Name*</label>
+            <label for="lname">Last Name<span class="red">*</span></label>
             <input type="text" id="lname" name="lastname" placeholder="Doe" required>
 
-            <label for="subject">Message*</label>
+            <label for="subject">Message<span class="red">*</span></label>
             <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"
                 required></textarea>
 

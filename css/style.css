@@ -111,7 +111,9 @@ img {
   /* Control the image size */
   height: auto;
   /* Maintain aspect ratio */
+  margin-left: auto;
 }
+
 
 /* Media Rules */
 @media (max-width: 600px) {
@@ -190,6 +192,7 @@ img {
   /* Allow text container to grow */
   margin-right: 20px;
   /* Space between text and grid */
+  padding: 20px;
 }
 
 .image-grid {
@@ -298,8 +301,17 @@ input[type=submit]:hover {
   color: black;
 }
 
+#container {
+  padding: 20px;
+}
+
 .contact-container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+/* Red Required Asterisks */
+.red {
+  color: red;
 }
