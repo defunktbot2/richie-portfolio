@@ -1,3 +1,4 @@
+/* General Styles */
 header {
   padding: 20px;
 }
@@ -25,18 +26,23 @@ p {
   font-size: 16px;
 }
 
+section {
+  margin: 0;
+  padding: 20px;
+}
+
 footer {
   background-color: #9ec5fe;
   text-align: center;
   padding: 32px;
 }
 
+/* Alternating light blue and white background colors for each section */
 .section {
   padding: 20px;
   text-align: left;
 }
 
-/* Alternating light blue and white background colors for each section */
 .light-blue {
   background-color: #9ec5fe;
 }
@@ -64,10 +70,12 @@ footer {
   /* Limit text width */
 }
 
-.hero-container img {
+.hero-image {
   max-width: 340.2px;
   margin-left: auto;
   /* Space between text and image */
+  width: 100%;
+  height: auto;
 }
 
 /* Introduction Section */
@@ -83,9 +91,19 @@ footer {
   /* Align items to the top */
 }
 
-.text-container {
+.text {
+  flex: 1;
   margin-right: 20px;
-  /* Space between text and image */
+}
+
+.image {
+  flex: 0 0 600px;
+  /* Fixed width for the image */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .intro-image {
@@ -95,7 +113,50 @@ footer {
   /* Maintain aspect ratio */
 }
 
+/* Media Rules */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    /* Stack on mobile */
+    align-items: flex-start;
+    /* Left align */
+  }
+
+  .text {
+    margin-right: 0;
+    /* Remove margin */
+  }
+
+  .image {
+    margin-top: 10px;
+    /* Space above the image */
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .long {
+    height: auto;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-image {
+    margin-left: 0;
+    margin-top: 32px;
+  }
+}
+
 /* Project Section & Cards */
+#project-detail {
+  padding: 20px;
+  margin: 0
+}
+
 .project-cards {
   display: flex;
   justify-content: space-between;
@@ -110,6 +171,44 @@ footer {
   padding: 16px;
   border-radius: 6px;
   background-color: white;
+}
+
+/* Three-Image Grid for Firefox Redesign Section */
+.project-detail {
+  display: flex;
+  /* Use flexbox for layout */
+  justify-content: space-between;
+  /* Space between text and grid */
+  align-items: flex-start;
+  /* Align items to the top */
+  padding: 20px;
+  /* Optional padding */
+}
+
+.text-container {
+  flex: 1;
+  /* Allow text container to grow */
+  margin-right: 20px;
+  /* Space between text and grid */
+}
+
+.image-grid {
+  display: grid;
+  /* Use grid layout for images */
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns */
+  gap: 10px;
+  /* Space between grid items */
+}
+
+/* Additional styles for grid items */
+.grid-item {
+  overflow: hidden;
+}
+
+.long {
+  grid-column: span 2;
+  /* Make the long image span both columns */
 }
 
 /* Learn More Buttons */
@@ -161,4 +260,46 @@ footer {
   background-color: #9E6700 !important;
   /* Dark Orange */
   color: black
+}
+
+/* Contact Form */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #FFA600;
+  /* Orange */
+  font-family: 'Montserrat', serif;
+  border: none;
+  border-radius: 6px;
+  color: black;
+  padding: 16px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FFC04C;
+  /* Light Orange */
+  color: black;
+}
+
+.contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
