@@ -162,8 +162,6 @@ img {
 #project-detail {
   padding: 20px;
   margin: 0;
-  max-width: 1200px;
-  overflow: auto;
 }
 
 .project-cards {
