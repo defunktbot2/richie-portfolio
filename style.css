@@ -162,6 +162,7 @@ img {
 #project-detail {
   padding: 20px;
   margin: 0;
+  width: 100%;
 }
 
 .project-cards {
