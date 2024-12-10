@@ -1,0 +1,289 @@
+/* General Styles */
+header {
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Montserrat Alternates', serif;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Montserrat Alternates', serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Montserrat Alternates', serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Montserrat', serif;
+  font-size: 16px;
+}
+
+section {
+  margin: 0;
+  padding: 20px;
+}
+
+footer {
+  background-color: #9ec5fe;
+  text-align: center;
+  padding: 32px;
+}
+
+/* Alternating light blue and white background colors for each section */
+.section {
+  padding: 20px;
+  text-align: left;
+}
+
+.light-blue {
+  background-color: #9ec5fe;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+/* Header Properties */
+.py-3 {
+  font-family: 'Montserrat Alternates', serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Hero Section Divisions w/ Flex Box */
+#hero {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.hero-text {
+  max-width: 500px;
+  /* Limit text width */
+}
+
+.hero-image {
+  max-width: 340.2px;
+  margin-left: auto;
+  /* Space between text and image */
+  width: 100%;
+  height: auto;
+}
+
+/* Introduction Section */
+#intro {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  /* Use flexbox for horizontal layout */
+  align-items: flex-start;
+  /* Align items to the top */
+}
+
+.text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image {
+  flex: 0 0 600px;
+  /* Fixed width for the image */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.intro-image {
+  max-width: 300px;
+  /* Control the image size */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-left: auto;
+}
+
+
+/* Media Rules */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    /* Stack on mobile */
+    align-items: flex-start;
+    /* Left align */
+  }
+
+  .text {
+    margin-right: 0;
+    /* Remove margin */
+  }
+
+  .image {
+    margin-top: 10px;
+    /* Space above the image */
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .long {
+    height: auto;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-image {
+    margin-left: 0;
+    margin-top: 32px;
+  }
+}
+
+/* Project Section & Cards */
+#project-detail {
+  padding: 20px;
+  margin: 0;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  /* Allow cards to grow */
+  margin: 10px;
+  /* Space between cards */
+  padding: 16px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+/* Three-Image Grid for Firefox Redesign Section */
+.text-container {
+  flex: 1;
+  /* Allow text container to grow */
+  margin-right: 20px;
+  /* Space between text and grid */
+  padding: 20px;
+}
+
+.image-grid {
+  display: grid;
+  /* Use grid layout for images */
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns */
+  gap: 10px;
+  /* Space between grid items */
+}
+
+/* Additional styles for grid items */
+.grid-item {
+  overflow: hidden;
+}
+
+.long {
+  grid-column: span 2;
+  /* Make the long image span both columns */
+}
+
+/* Learn More Buttons */
+.button-container {
+  display: flex;
+  /* Use flexbox */
+  flex-direction: column;
+  /* Stack buttons vertically */
+  align-items: flex-start;
+  /* Align buttons to the start (left) */
+  margin-top: 10px;
+  /* Space above the buttons */
+}
+
+.btn {
+  margin-bottom: 10px;
+  /* Space between buttons */
+}
+
+/* Removes underline from project cards */
+.no-underline {
+  color: black;
+  text-decoration: none;
+}
+
+/* Primary Button States */
+.btn-primary {
+  background-color: #FFA600;
+  /* Orange */
+  font-family: 'Montserrat', serif;
+  border: none;
+  border-radius: 6px;
+  color: black;
+  padding: 16px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #FFC04C;
+  /* Light Orange */
+  color: black;
+}
+
+.btn-primary:active {
+  background-color: #9E6700 !important;
+  /* Dark Orange */
+  color: black
+}
+
+/* Contact Form */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#container {
+  padding: 20px;
+}
+
+.contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Red Required Asterisks */
+.red {
+  color: red;
+}
